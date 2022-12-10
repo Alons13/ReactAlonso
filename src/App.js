@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -13,7 +12,7 @@ function App() {
         <Routes>
           <Route  path='/' element={<ItemListContainer greeting='Items' />}/>
           <Route  path='/category/id' element={<ItemListContainer greeting='Bienvenido!'/>}/>
-          <Route path='/item/id' element={<ItemDetailContainer />} />          
+          <Route path='/item/:id' element={<ItemDetailContainer />} />          
         </Routes>
       </BrowserRouter>
     </div>
